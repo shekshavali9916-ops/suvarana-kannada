@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Fraunces", "Noto Sans Kannada", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", "Noto Sans Kannada", system-ui, -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-kannada: "Noto Sans Kannada", "Plus Jakarta Sans", sans-serif;
+
+  --color-canvas: #FAF7F2;
+  --color-surface: #FFFFFF;
+  --color-sandstone: #F3EDE2;
+  --color-hairline: #E5DCCB;
+  --color-ink: #1F1916;
+  --color-muted: #5C5147;
+  --color-crimson: #8B1E24;
+  --color-crimson-deep: #681318;
+  --color-crimson-rail: #231113;
+  --color-gold: #B6862C;
+  --color-gold-bright: #D4A43C;
+  --color-gold-wash: #F9F2E1;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3 {
+    text-wrap: balance;
+  }
+}
+
+.font-kannada {
+  font-family: var(--font-kannada);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

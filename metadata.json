@@ -1,0 +1,6 @@
+{
+  "name": "Suvarna Kannada",
+  "description": "Culturally immersive Karnataka heritage dashboard and dedicated Kannada AI guide covering history, festivals, tourism, Jnanpith laureates, famous figures, language learning, and an interactive quiz.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
